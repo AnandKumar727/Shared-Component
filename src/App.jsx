@@ -1,14 +1,20 @@
-import React from 'react'
 import Button from './Components/Shared/Button'
+import Card from './Components/Shared/Card'
 function App() {
   return (
-    <div className='p-16 flex gap-10'>
-      <Button type='primary' icon='arrow-right-up-line'>Register Now</Button>
-      <Button type='secondary' icon={'login-circle-line'}>Login</Button>
-      <Button type='danger'>Error</Button>
-      <Button type='warning'>Limited sheet</Button>
-      <Button type='success' icon={'edit-2-line'}>Edit Now</Button>
-      <Button type='danger'>Hello</Button>
+    <div className='p-16 grid grid-cols-2 gap-10'>
+    <Card 
+    title='Dashboard'
+    footer = {
+      <Button type='warning'>Edit</Button>
+    }
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, cum. Nam, animi libero modi natus error nobis quasi accusamus vitae iste sit harum laboriosam eius iure voluptates, quis recusandae nisi.
+    </Card>
+    <Card 
+    title='Profile'
+    footer = 'Hello I am Footer'
+    >Here is my Content</Card>
     </div>
   )
 }
